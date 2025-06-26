@@ -35,3 +35,7 @@ company = Company.create(
   logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/CVS_Health_Logo.svg/610px-CVS_Health_Logo.svg.png",
   description: "Health care solutions company"
 )
+
+user = User.create!(name: "Kelvin", email: "Kelvin@email.com", password: "123")
+user = User.create!(name: "Marylin", email: "Maryliin@email.com", password: "123")
+user = User.create!(name: "Amelia", email: "Amelia@email.com", password: "123")
