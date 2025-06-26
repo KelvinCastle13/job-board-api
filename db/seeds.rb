@@ -41,8 +41,6 @@ company = Company.create(
 )
 
 
-user = User.create!(name: "Kelvin", email: "Kelvin@email.com", password: "123")
-user = User.create!(name: "Marylin", email: "Maryliin@email.com", password: "123")
-user = User.create!(name: "Amelia", email: "Amelia@email.com", password: "123")
-
-
+user = User.create!(name: "Kelvin", email: "Kelvin@email.com", password_: "123", password_confirmation: "123")
+user = User.create!(name: "Marylin", email: "Maryliin@email.com", password: "123", password_confirmation: "123")
+user = User.create!(name: "Amelia", email: "Amelia@email.com", password: "123", password_confirmation: "123")
