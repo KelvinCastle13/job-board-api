@@ -40,3 +40,9 @@ company = Company.create(
   description: "Health care solutions company"
 )
 
+
+user = User.create!(name: "Kelvin", email: "Kelvin@email.com", password: "123")
+user = User.create!(name: "Marylin", email: "Maryliin@email.com", password: "123")
+user = User.create!(name: "Amelia", email: "Amelia@email.com", password: "123")
+
+
