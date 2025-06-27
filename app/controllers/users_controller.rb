@@ -20,11 +20,11 @@ class UsersController < ApplicationController
     if @user.save
       render json: { message: "user created" }
     else
-      render json: { user.error.full.messages }
+      render json: { errors: @user.error.full.messages }
     end
   end
 
-  def update 
+  def update
     @user = User.find(params[:id])
 
     @user.update(
@@ -34,16 +34,16 @@ class UsersController < ApplicationController
       password_confirmation: params[:password_confirmation] || @user.password_confirmation
     )
 
-    if @user.update 
+    if @user.update
       render json: { message: "user updated" }
-    else 
-      render json: { user.error.full.messages }
+    else
+      render json: { errors: @user.error.full.messages }
     end
   end
 
-  def destroy 
+  def destroy
     @user = User.find(params[:id])
     @user.destroy
-    render json: { message: "product destroyed"}
-  end 
+    render json: { message: "product destroyed" }
+  end
 end
